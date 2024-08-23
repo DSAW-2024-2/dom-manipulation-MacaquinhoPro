@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1a1a1a; /* Fondo oscuro */
+    background-color: #1a1a1a;
     box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .button {
     position: absolute;
-    top: 50%; /* Coloca los botones en el centro vertical del carrusel */
+    top: 50%; /* Places the buttons vertically in the center of the carousel */
     transform: translateY(-50%);
     z-index: 2;
     width: 48px;
@@ -49,11 +49,11 @@ body {
 }
 
 #prev {
-    left: 10px; /* Ajusta la posición del botón izquierdo */
+    left: 10px; /* Adjusts the position of the left button */
 }
 
 #next {
-    right: 10px; /* Ajusta la posición del botón derecho */
+    right: 10px; /* Adjusts the position of the right button */
 }
 
 #prev:disabled,
@@ -115,7 +115,7 @@ body {
         transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
 }
 
-/* Media queries para responsividad */
+/* Media queries for responsiveness */
 @media (max-width: 600px) {
     .carousel-container {
         width: 100%;
@@ -128,11 +128,11 @@ body {
     }
 
     #prev {
-        left: calc(15% - 40px); /* Ajusta la posición del botón izquierdo */
+        left: calc(15% - 40px); /* Adjusts the position of the left button */
     }
 
     #next {
-        right: calc(15% - 40px); /* Ajusta la posición del botón derecho */
+        right: calc(15% - 40px); /* Adjusts the position of the right button */
     }
 
     .button-elem {

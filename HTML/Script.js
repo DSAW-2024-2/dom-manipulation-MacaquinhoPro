@@ -7,7 +7,7 @@ function updateCarousel() {
     const width = carousel.clientWidth;
     carousel.style.transform = `translateX(-${currentIndex * width}px)`;
 
-    // Deshabilitar los botones en los extremos
+    // Disable buttons at the ends
     prevButton.disabled = currentIndex === 0;
     nextButton.disabled = currentIndex === document.querySelectorAll('.carousel-item').length - 1;
 }
